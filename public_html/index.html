@@ -11,7 +11,12 @@
       content="Start your development with Ollie landing page."
     />
     <meta name="author" content="Devcrud" />
-    <title>Ollie Landing page | Free Bootstrap 4.3.x landing page</title>
+    <title>Major Helper</title>
+    <link
+      rel="shortcut icon"
+      type="image⁄x-icon"
+      href="assets/imgs/main-icon.png"
+    />
 
     <!-- font icons -->
     <link
@@ -28,6 +33,7 @@
       rel="stylesheet"
       href="assets/vendors/owl-carousel/css/owl.theme.default.css"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="assets/css/ollie.css" />
@@ -62,30 +68,17 @@
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Course</a>
+              <a class="nav-link" href="#course">Course</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Lecture</a>
+              <a class="nav-link" href="#lecture">Lecture</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Website</a>
+              <a class="nav-link" href="#website">Website</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testmonial">Review</a>
+              <a class="nav-link" href="#review">Review</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Books</a>
-            </li> -->
-
-            <!-- componets link
-            <li class="nav-item ml-0 ml-lg-4">
-              <a class="nav-link btn btn-primary" href="components.html"
-                >Components</a
-              >
-            </li> -->
           </ul>
         </div>
       </div>
@@ -100,30 +93,101 @@
         data-ride="carousel"
       >
         <div class="container">
+          <!--  -->
+          <div class="dropdown d-inline-block majorSelectBtn">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle font-weight-bold"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color: white"
+            >
+              Select Your Major
+            </button>
+            <div
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+              x-placement="bottom-start"
+              style="
+                position: absolute;
+                will-change: transform;
+                top: 0px;
+                left: 0px;
+                transform: translate3d(0px, 38px, 0px);
+              "
+            >
+              <a
+                class="dropdown-item software"
+                href="#"
+                onclick="
+              const title = document.querySelector('.mainTitle');
+              title.innerHTML =  'Software' + '<br/> Major Helper';
+              "
+                >Software</a
+              >
+              <a
+                class="dropdown-item business"
+                href="#"
+                onclick="
+            const title = document.querySelector('.mainTitle');
+            title.innerHTML =  'Business' + '<br/> Major Helper';
+            "
+                >Business</a
+              >
+              <a
+                class="dropdown-item economics"
+                href="#"
+                onclick="
+          const title = document.querySelector('.mainTitle');
+          title.innerHTML =  'Economics' + '<br/> Major Helper';
+          "
+                >Economics</a
+              >
+              <a
+                class="dropdown-item engineering"
+                href="#"
+                onclick="
+          const title = document.querySelector('.mainTitle');
+          title.innerHTML =  'Engineering' + '<br/> Major Helper';
+          "
+                >Engineering</a
+              >
+              <a
+                class="dropdown-item mathematics"
+                href="#"
+                onclick="
+          const title = document.querySelector('.mainTitle');
+          title.innerHTML =  'Mathematics' + '<br/> Major Helper';
+          "
+                >Mathematics</a
+              >
+              <a
+                class="dropdown-item medicine"
+                href="#"
+                onclick="
+          const title = document.querySelector('.mainTitle');
+          title.innerHTML =  'Medicine' + '<br/> Major Helper';
+          "
+                >Medicine</a
+              >
+            </div>
+          </div>
+
+          <!-- dd -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-caption d-none d-md-block">
-                <h1 class="carousel-title">
+                <h1 class="carousel-title mainTitle">
                   전공 도우미<br />
                   Major Helper
                 </h1>
-                <button class="btn btn-primary btn-rounded">
+                <!-- <button class="btn btn-primary btn-rounded">
                   Select Major
-                </button>
+                </button> -->
               </div>
             </div>
-            <!-- <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">We Make <br> Responsive Design</h1>
-                            <button class="btn btn-primary btn-rounded">Learn More</button>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">We Make <br> Simple Design</h1>
-                            <button class="btn btn-primary btn-rounded">Learn More</button>
-                          </div>
-                    </div> -->
           </div>
         </div>
       </div>
@@ -135,103 +199,12 @@
           <p class="font-small">당신의 전공 공부를 더 효율적이게.</p>
         </div>
         <div class="socials text-right">
-          <div class="row justify-content-between">
-            <!-- <div class="col">
-              <a class="d-block subtitle"
-                ><i class="ti-microphone pr-2"></i> (123) 456-7890</a
-              >
-              <a class="d-block subtitle"
-                ><i class="ti-email pr-2"></i> info@website.com</a
-              >
-            </div> -->
-            <!-- <div class="col">
-              <h6 class="subtitle font-weight-normal mb-2">Social Media</h6>
-              <div class="social-links">
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-facebook"></i
-                ></a>
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-twitter-alt"></i
-                ></a>
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-google"></i
-                ></a>
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-pinterest-alt"></i
-                ></a>
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-instagram"></i
-                ></a>
-                <a href="javascript:void(0)" class="link pr-1"
-                  ><i class="ti-rss"></i
-                ></a>
-              </div>
-            </div> -->
-          </div>
+          <div class="row justify-content-between"></div>
         </div>
       </div>
     </header>
 
-    <section class="section" id="about">
-      <!-- <div class="container">
-        <div class="row align-items-center mr-auto">
-          <div class="col-md-4">
-            <h6 class="xs-font mb-0">nobis dolorem sapiente evenie.</h6>
-            <h3 class="section-title">About Us</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              sunt, unde aperiam aliquid quia repudiandae, ex harum quis amet
-              delectus maxime, tempora possimus aut laboriosam magni corrupti
-              labore. Doloremque, sit?
-            </p>
-
-            <a href="javascript:void(0)">Read more...</a>
-          </div>
-          <div class="col-sm-6 col-md-4 ml-auto">
-            <div class="widget">
-              <div class="icon-wrapper">
-                <i class="ti-calendar"></i>
-              </div>
-              <div class="infos-wrapper">
-                <h4 class="text-primary">15+</h4>
-                <p>onsectetur perspiciatis</p>
-              </div>
-            </div>
-            <div class="widget">
-              <div class="icon-wrapper">
-                <i class="ti-face-smile"></i>
-              </div>
-              <div class="infos-wrapper">
-                <h4 class="text-primary">125+</h4>
-                <p>onsectetur perspiciatis</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="widget">
-              <div class="icon-wrapper">
-                <i class="ti-star"></i>
-              </div>
-              <div class="infos-wrapper">
-                <h4 class="text-primary">3434+</h4>
-                <p>onsectetur perspiciatis</p>
-              </div>
-            </div>
-            <div class="widget">
-              <div class="icon-wrapper">
-                <i class="ti-user"></i>
-              </div>
-              <div class="infos-wrapper">
-                <h4 class="text-primary">80+</h4>
-                <p>onsectetur perspiciatis</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </section>
-
-    <section class="section">
+    <section class="section" id="course">
       <div class="container">
         <h6 class="xs-font mb-0">원하는 과목을 고르세요.</h6>
         <h3 class="section-title mb-4">
@@ -250,9 +223,6 @@
               />
               <span class="card-body">
                 <h4 class="title mt-4">자료구조개론</h4>
-                <!-- <p class="xs-font">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p> -->
               </span>
             </a>
           </div>
@@ -265,9 +235,6 @@
               />
               <span class="card-body">
                 <h4 class="title mt-4">알고리즘개론</h4>
-                <!-- <p class="xs-font">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p> -->
               </span>
             </a>
           </div>
@@ -280,9 +247,6 @@
               />
               <span class="card-body">
                 <h4 class="title mt-4">컴퓨터구조개론</h4>
-                <!-- <p class="xs-font">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p> -->
               </span>
             </a>
           </div>
@@ -290,7 +254,7 @@
       </div>
     </section>
 
-    <section class="section" id="portfolio">
+    <section class="section" id="lecture">
       <div class="container">
         <h6 class="xs-font mb-0">원하는 강좌를 고르세요.</h6>
         <h3 class="section-title pb-4">
@@ -387,7 +351,7 @@
     </section>
 
     <!-- https://dailylifeofdeveloper.tistory.com/240 -->
-    <section class="section" id="blog">
+    <section class="section" id="website">
       <div class="container">
         <h6 class="xs-font mb-0">원하는 사이트를 고르세요.</h6>
         <h3 class="section-title pb-4">
@@ -464,7 +428,7 @@
       </div>
     </section>
 
-    <section class="section" id="testmonial">
+    <section class="section" id="review">
       <div class="container">
         <h6 class="xs-font mb-0">당신의 의견을 남겨주세요 !</h6>
         <h3 class="section-title">
@@ -482,7 +446,7 @@
               <div class="des">
                 <h5 class="ti-quote-left font-weight-bold"></h5>
                 <p>너무 좋아요 !</p>
-                <h5 class="ti-quote-left text-right font-weight-bold"></h5>
+                <h5 class="ti-quote-right text-right font-weight-bold"></h5>
 
                 <div class="line"></div>
                 <h6 class="name">홍길동</h6>
@@ -500,7 +464,7 @@
               <div class="des">
                 <h5 class="ti-quote-left font-weight-bold"></h5>
                 <p>좋은 것 같아요 !</p>
-                <h5 class="ti-quote-left text-right font-weight-bold"></h5>
+                <h5 class="ti-quote-right text-right font-weight-bold"></h5>
 
                 <div class="line"></div>
                 <h6 class="name">김철수</h6>
@@ -518,7 +482,7 @@
               <div class="des">
                 <h5 class="ti-quote-left font-weight-bold"></h5>
                 <p>너무 좋습니다.</p>
-                <h5 class="ti-quote-left text-right font-weight-bold"></h5>
+                <h5 class="ti-quote-right text-right font-weight-bold"></h5>
 
                 <div class="line"></div>
                 <h6 class="name">이영희</h6>
@@ -550,171 +514,15 @@
               </div>
               <div class="col">
                 <h6 class="subtitle font-weight-normal mb-1">Contact Us</h6>
-                <div class="social-links">
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-facebook"></i
-                  ></a>
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-twitter-alt"></i
-                  ></a>
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-google"></i
-                  ></a>
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-pinterest-alt"></i
-                  ></a>
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-instagram"></i
-                  ></a>
-                  <a href="javascript:void(0)" class="link pr-1"
-                    ><i class="ti-rss"></i
-                  ></a>
-                </div>
+                <h6 class="subtitle font-weight-normal mb-1">
+                  © SKKU LIKELION TEAM 3. All rights reserved.
+                </h6>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- <section class="section" id="blog">
-      <div class="container mb-3">
-        <h6 class="xs-font mb-0">Culpa perferendis excepturi.</h6>
-        <h3 class="section-title mb-5">Our Blog</h3>
-
-        <div class="blog-wrapper">
-          <div class="img-wrapper">
-            <img
-              src="assets/imgs/img-3.jpg"
-              alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
-            />
-            <div class="date-container">
-              <h6 class="day">29</h6>
-              <h6 class="mun">Jun</h6>
-            </div>
-          </div>
-          <div class="txt-wrapper">
-            <h4 class="blog-title">Lorem ipsum dolor.</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-              vitae ducimus dolor sed numquam, assumenda non dolorem in facilis
-              eius alias voluptates, fugit maiores aspernatur ad rem saepe
-              molestiae consequuntur. adipisicing elit. Repellat nam placeat
-              laboriosam dolorum aperiam fuga voluptate, quis ea vel ab sunt
-              incidunt quasi, molestias atque deserunt voluptates quae
-              voluptatum sit.
-            </p>
-
-            <a href="#" class="badge badge-info">Graphic Design</a>
-
-            <h6 class="blog-footer">
-              <a href="javascript:void(0)"><i class="ti-user"></i> Admin </a> |
-              <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 213 </a>
-              |
-              <a href="javascript:void(0)"><i class="ti-comments"></i> 123</a>
-            </h6>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section pb-0">
-      <div class="container">
-        <h6 class="xs-font mb-0">Culpa perferendis excepturi.</h6>
-        <h3 class="section-title mb-5">Contact Us</h3>
-
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-8 col-lg-7">
-            <form class="contact-form">
-              <div class="form-row">
-                <div class="col form-group">
-                  <input type="text" class="form-control" placeholder="Name" />
-                </div>
-                <div class="col form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
-                  class="form-control"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <input
-                  type="submit"
-                  class="btn btn-primary btn-block"
-                  value="Send Message"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="col-md-4 d-none d-md-block order-1">
-            <ul class="list">
-              <li class="list-head">
-                <h6>CONTACT INFO</h6>
-              </li>
-              <li class="list-body">
-                <p class="py-2">
-                  Contact us and we'll get back to you within 24 hours.
-                </p>
-                <p class="py-2">
-                  <i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB
-                  Country
-                </p>
-                <p class="py-2"><i class="ti-email"></i> info@website.com</p>
-                <p class="py-2"><i class="ti-microphone"></i> (123) 456-7890</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <footer class="footer mt-5 border-top">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-6 text-center text-md-left">
-              <p class="mb-0">
-                Copyright
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                &copy;
-                <a target="_blank" href="http://www.devcrud.com">DevCRUD</a>
-              </p>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-              <div class="social-links">
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-facebook"></i
-                ></a>
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-twitter-alt"></i
-                ></a>
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-google"></i
-                ></a>
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-pinterest-alt"></i
-                ></a>
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-instagram"></i
-                ></a>
-                <a href="javascript:void(0)" class="link"
-                  ><i class="ti-rss"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </section> -->
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -728,5 +536,8 @@
 
     <!-- Ollie js -->
     <script src="assets/js/Ollie.js"></script>
+
+    <!-- Scripts js -->
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
